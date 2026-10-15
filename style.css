@@ -1,0 +1,388 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #172554;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #3b82f6;
+}
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home {
+    min-height: 85vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.home-content {
+    max-width: 750px;
+}
+
+.welcome {
+    color: #2563eb;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.home h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.home h1 span {
+    color: #2563eb;
+}
+
+.home h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: #2563eb;
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    margin: 5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #172554;
+    transform: translateY(-2px);
+}
+
+.btn.secondary {
+    background-color: #555;
+}
+
+
+/* =========================
+   RESUME
+========================= */
+
+.resume-container,
+.biodata-container {
+    width: 85%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* RESUME HEADER */
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 3px solid #2563eb;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 30px;
+}
+
+.resume-header h1 {
+    font-size: 35px;
+    color: #172554;
+}
+
+.resume-header p {
+    color: #555;
+}
+
+.contact {
+    text-align: right;
+}
+
+
+/* RESUME SECTIONS */
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-section h2,
+.bio-card h2 {
+    color: #172554;
+
+    border-left: 5px solid #2563eb;
+
+    padding-left: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #172554;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f7fa;
+}
+
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background-color: #dbeafe;
+    color: #1e40af;
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+
+/* PROJECTS */
+
+.project {
+    border: 1px solid #ddd;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-radius: 8px;
+
+    background-color: #fafafa;
+}
+
+.project h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+
+/* LISTS */
+
+.normal-list {
+    padding-left: 25px;
+}
+
+.normal-list li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   BIO-DATA
+========================= */
+
+.biodata-container > h1 {
+    text-align: center;
+    color: #172554;
+    font-size: 38px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.bio-card {
+    margin-bottom: 30px;
+}
+
+.bio-table td:first-child {
+    width: 35%;
+    background-color: #eef2ff;
+}
+
+.hobbies {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+.hobbies li {
+    margin-bottom: 8px;
+}
+
+.declaration {
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+}
+
+.signature {
+    margin-top: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    background-color: #172554;
+
+    color: white;
+
+    padding: 18px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .resume-container,
+    .biodata-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .resume-header {
+        flex-direction: column;
+    }
+
+    .contact {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
